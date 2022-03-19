@@ -63,14 +63,12 @@ def run_game():
         guess = change_guess_index(guess)
 
         clear()
-
+        print(logo)
         if guess == answer:
             score += 1
             subjects = update_pair(subjects)
-            print(logo)
             print(f"You're right! Current score: {score}")
         else:
-            print(logo)
             print(f"Sorry, that's wrong. Final score {score}")
             game_over = True
 
